@@ -1,0 +1,28 @@
+<div class="popular_destination__card">
+  <div class="destination_name">{{ popularDestinationName }}</div>
+  <div class="destination_photo__container">
+    <img
+      src="{{ imgUrl }}"
+      alt="image of {{ popularDestinationName }}"
+      class="destination_photo"
+    />
+  </div>
+  <div class="weather_info__container">
+    <div class="weather">
+      <img
+        src="{{ weatherIconUrl }}"
+        alt="{{ currentWeather }}"
+        class="weather_icon"
+      />
+    </div>
+    <div class="temperature">{{ currentTemp }} &#8451;</div>
+    <div class="wind_direction">
+      <fa-icon
+        [icon]="faLocationArrow"
+        class="wind_arrow"
+      ></fa-icon>
+    </div>
+
+    <div class="wind_speed">{{ windSpeed }} km/h</div>
+  </div>
+</div>

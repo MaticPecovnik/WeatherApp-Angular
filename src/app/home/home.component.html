@@ -1,0 +1,12 @@
+<div class="main__container">
+  <div class="input__container">
+    <label for="cityName">Search by location name</label>
+    <input id="cityName" type="text" [(ngModel)]="cityName" />
+  </div>
+  <div class="popular_location__container">
+    <popular-destination
+      *ngFor="let destination of popularDestinations"
+      [popularDestinationName]="destination"
+    ></popular-destination>
+  </div>
+</div>
