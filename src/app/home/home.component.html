@@ -2,6 +2,9 @@
   <div class="input__container">
     <label for="cityName">Search by location name</label>
     <input id="cityName" type="text" [(ngModel)]="cityName" />
+    <a class="search_button btn" routerLink="/location/{{ cityName }}">
+      Search
+    </a>
   </div>
   <div class="popular_location__container">
     <popular-destination

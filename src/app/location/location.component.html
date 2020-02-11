@@ -1,1 +1,10 @@
-<p>location works!</p>
+<div class="location__container">
+  <div class="location_current__container"></div>
+  <div class="location_forecast__container">
+    <day-forecast
+      *ngFor="let date of dateList"
+      [currentDate]="date"
+      [forecast]="forecast"
+    ></day-forecast>
+  </div>
+</div>

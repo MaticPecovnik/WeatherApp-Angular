@@ -1,0 +1,19 @@
+.day_forecast__container {
+  background-color: whitesmoke;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.date__container {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0.3rem;
+}
+
+.forecast_tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

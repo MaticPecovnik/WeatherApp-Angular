@@ -49,3 +49,29 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
+
+.btn {
+  border: none;
+  padding: 0.7rem;
+  margin-top: 0.2rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.day_forecast__container {
+  background-color: whitesmoke;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.date__container {
+  display: flex;
+  font-weight: 700;
+  margin: 0.3rem;
+}
+
+.forecast_tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

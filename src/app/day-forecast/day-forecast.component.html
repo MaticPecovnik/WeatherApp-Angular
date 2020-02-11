@@ -1,0 +1,11 @@
+<div class="day_forecast__container">
+  <div class="date__container">{{ standardDate }}</div>
+  <div class="forecast_tiles">
+    <forecast-tile
+      *ngFor="let hour of forecastHours"
+      [currentHour]="hour"
+      [currentDate]="currentDate"
+      [forecast]="forecast"
+    ></forecast-tile>
+  </div>
+</div>

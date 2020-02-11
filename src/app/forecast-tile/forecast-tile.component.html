@@ -1,0 +1,13 @@
+<div class="forecast_tile__container">
+  <div class="forecast_time">{{ currentHour.slice(0, 2) }}h</div>
+  <div class="forecast_image" *ngIf="todaysForecast.temp">
+    <img
+      src="{{ weatherIconUrl }}"
+      alt="{{ todaysForecast.description }}"
+      class="weather_icon"
+    />
+  </div>
+  <div class="forecast_temperature" *ngIf="todaysForecast.temp">
+    {{ todaysForecast.temp }} &#8451;
+  </div>
+</div>

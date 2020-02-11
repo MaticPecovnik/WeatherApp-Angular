@@ -7,6 +7,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HomeComponent implements OnInit {
   cityName: string = "";
+
+  /* Names of popular destinations to populate the home page */
   popularDestinations: string[] = [
     "London",
     "Vienna",

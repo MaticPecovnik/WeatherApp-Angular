@@ -50,7 +50,7 @@ export class PopularDestinationComponent implements OnInit {
     }
 
     /* Get the current weather data for the 5 pre-determined popular destinations */
-    this.http
+    let subscription = this.http
       .get(
         "http://api.openweathermap.org/data/2.5/weather?q=" +
           this.popularDestinationName +
@@ -72,6 +72,8 @@ export class PopularDestinationComponent implements OnInit {
           "http://openweathermap.org/img/wn/" +
           this.currentWeatherIcon +
           "@2x.png";
+
+        subscription.unsubscribe();
       });
   }
 }

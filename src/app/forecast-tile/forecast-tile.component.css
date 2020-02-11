@@ -1,0 +1,35 @@
+.forecast_tile__container {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 7vw;
+  height: 10.1vh;
+  margin: 0.2rem;
+}
+
+.forecast_time {
+  font-weight: 800;
+}
+
+.forecast_image {
+  background-color: rgba(41, 219, 210, 0.719);
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.weather_icon {
+  width: 50%;
+}
+
+.forecast_temperature {
+  padding: 0.2rem;
+  font-weight: 700;
+}
+
+.forecast_time {
+}

@@ -31,3 +31,15 @@ label {
   justify-content: space-around;
   margin: 2rem 0;
 }
+
+.search_button {
+  background-color: rgb(255, 145, 20);
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 145, 20);
+  transition: all 0.2s;
+}
+
+.search_button:hover {
+  border: 2px solid white;
+}
